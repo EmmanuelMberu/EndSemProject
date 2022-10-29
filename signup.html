@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="endsem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+</head>
+
+<body>
+    <!--Navigation Bar Section-->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-warning">
+            <div class="container">
+                <img src="images/minilogo.png" class="img-fluid" alt="">
+                <h1><b><a class="navbar-brand" href="#">Career Guidance</a></b></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href=index.php>Home</a>
+                
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href=login.html>Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <br>
+    <center>
+    <h1>Signup</h1>
+
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        <br>
+        <p>Already have an account? <a href=login.php>Login</a></p>
+        <br>
+        <button class ="btn btn-primary">Sign up</button>
+    </form>
+    </center>
+</body>
+
+</html>
